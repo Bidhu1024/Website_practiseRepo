@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <header>
+     <nav>
+    <div class="logo">
+        Cha<span>R</span>lie
+    </div>
+   <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact us</a>
+</div>
+<div class="icon">
+    <i class = "fa fa-search"></i>
+    <a href="#">Login</a>
+</div>
+
+</header>
+<section class="header1">
+    <img src="./img/banner1.jpg" alt="">
+    <div class="con">
+        <i class="fa fa-camera" id="camera"></i>
+        <h1>“If your photos aren’t good enough, then you’re not close enough.” </h1>
+        <input type="text" placeholder="Search here">
+        <button>Search</button>
+    </div>
+
+</section>
+<div class="container">
+    <div class="box">
+    <h1>Hello</h1>    
+</div>
+</div>
+    
+
+
+    <!-- page-2 -->
+
+    <section class="gallery">
+        <div class="pmenu">
+            <ul>
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".nature">Nature</li>
+            <li data-filter=".fashion">Fashion</li>
+            <li data-filter=".wedding">Wedding</li>
+                </ul>
+        </div>
+       
+        <div class="p-items">
+            <div class="items nature">
+                <img src="./img/p1.jpg" alt="" height="100" width="100">
+            </div>
+            <div class="items nature">
+                <img src="./img/p2.jpg" alt="" height="100" width="100">
+            </div>
+            <div class="items nature">
+                <img src="./img/p3.jpg" alt="" height="100" width="100">
+        
+            </div>
+            <div class="items fashion">
+                <img src="./img/s1.jpg" alt="" height="100" width="100">
+            </div>
+            <div class="items fashion">
+                <img src="./img/s2.jpg" alt="" height="100" width="100">
+            </div>
+            <div class="items fashion">
+                <img src="./img/s3.jpg" alt="" height="100" width="100">
+            </div>
+            <div class="items wedding">
+                <img src="./img/p7.jpg" alt="" height="100" width="100">
+            </div>
+            <div class="items wedding">
+                <img src="./img/p8.jpg" alt="" height="100" width="100">
+            </div>
+            <div class="items wedding">
+                <img src="./img/p9.jpg" alt="" height="100" width="100">
+
+        </div>
+    
+
+        
+        </div>
+        
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="$('.p-items').isotope({
+        // options
+        itemSelector: '.items',
+        layoutMode: 'fitRows'
+      });">
+    $('.pmenu ul li').click(function(){
+        $('pmenu ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    var selector = $(this).attr('data-filter');
+    $('.p-items').isotope({
+        filter:selector
+    });
+    return false;
+    </script>
+</body>
+</html>

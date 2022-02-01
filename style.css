@@ -1,0 +1,172 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    /* height: 90vh; */
+    /* background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('./img/banner1.jpg'); */
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4rem;
+    top: 0;
+    position: sticky;
+   
+}
+.logo{
+    font-family: sans-serif;
+font-size: 2.5rem;
+}
+.logo span{
+    color: red;
+}
+.menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+}
+.menu a:hover{
+    color: red;
+
+}
+.icon i{
+    font-size: 20px;
+}
+.icon a{
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border-radius: 5px;
+
+}
+.icon a:hover{
+    background-color: blue;
+    color: black;
+}
+.header1{
+    color: white;
+    width: 100%;
+    height:500px;
+    position: relative;   
+}
+.header1 img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.header1 .con{
+    position: absolute;
+    /* top: 300%; */    
+    width: 700px;
+    top: 50%;    
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    float: left;
+}
+#camera{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.header1 h1{
+    font-family: sans-serif;
+    font-size: 2em;
+    line-height: 1em;
+}
+.header1 input{
+    border: none;
+    border-radius: 2px;
+    width: 60%;
+    outline: none;
+    padding: 10px;
+}
+.header1 button{
+    padding: 4px;
+    border-radius: 2px;
+    width: 20%;
+    background: white;
+    color: teal ;
+
+}
+.container{
+    background: url(./img/banner.jpg);
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+.container .box{
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    width: 20%;
+    float:center;
+    background-color: red;
+
+}
+.gallery{
+
+    padding: 30px;
+}
+.pmenu{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pmenu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px 0px;
+    font-size: 30px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s ease;
+    text-align: center;
+}
+.pmenu ul li:hover{
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+}
+.active{
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+}
+.p-items{
+    width: 100%;
+}
+
+.p-items .items{
+    width: 360px;
+    height: 360px;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.p-items .items img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    
+}
